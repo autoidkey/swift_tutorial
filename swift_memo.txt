@@ -1,0 +1,9 @@
+git add . =A
+git commit -m “”
+git remote add origin https://github.com/autoidkey/swift_tutorial.git
+git push -u origin master
+
+サイト
+http://dotinstall.com/lessons/basic_iphoneapp_v3
+http://www.sejuku.net/blog/4930#Xcode_SwiftToDo
+http://programming-beginner-memo.com/?p=19
