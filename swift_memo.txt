@@ -8,3 +8,34 @@ http://dotinstall.com/lessons/basic_iphoneapp_v3
 http://www.sejuku.net/blog/4930#Xcode_SwiftToDo
 http://programming-beginner-memo.com/?p=19
 https://qiita.com/snowman_mh/items/0d27f4abf7b14c72107f
+
+*******************************
+定数との結びつき
+Outlet : 主に表示系
+Action : ボタンなどタップによって動作
+(_ sender) で値を取得することが可能
+基本的にオーバーライドして更新などを行う
+オーバーライドする関数はだいたい will とか did　とか時制のもの
+
+DBはcoredataを使用
+画面遷移だけならactionを使用せずviewControllerに繋げばok
+
+**********************************
+ライブラリの管理にはCocoaPods.orgを利用します。CocoaPodsは、RubyでいうBundlerのようなツールです。使用するライブラリをPodfile（Gemfileに相当）に書いて、インストールします。
+$sudo gem install cocoapods
+$ pod setup
+
+プロジェクトを保存したフォルダに、Podfileを作成します。
+$ pod init
+Podfileを次のように編集します。
+platform :ios, '9.0'
+
+target ‘project_name’ do
+  use_frameworks!
+  pod 'Expression'
+end
+
+ライブラリをインストールします。
+$ pod install
+
+テスト
